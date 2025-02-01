@@ -33,5 +33,7 @@ In order for our GPO to work on another computer, we need to link the group poli
 
 ![11](https://github.com/user-attachments/assets/8991be51-2167-4172-8962-24500b51fa27)
 
+<h2>Finalizing GPO & Best Practices</h2>
 
+The GPO will automatically update in due time, but we can manually force the group policy to update. (Note that you have to update both client side's GPO and server side GPO.) In our domain controller run command prompt and type "gpupdate /force". Wait for both User and Computer policies to finish updating, then log in to Client1 as a local admin user. In Client1, run command prompt and type "gpupdate /force". Before testing your policies, it's important to always finalize with a gpupdate /force on both client side and server side.
 </p>
