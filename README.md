@@ -36,4 +36,19 @@ In order for our GPO to work on another computer, we need to link the group poli
 <h2>Finalizing GPO & Best Practices</h2>
 
 The GPO will automatically update in due time, but we can manually force the group policy to update. (Note that you have to update both client side's GPO and server side GPO.) In our domain controller run command prompt and type "gpupdate /force". Wait for both User and Computer policies to finish updating, then log in to Client1 as a local admin user. In Client1, run command prompt and type "gpupdate /force". Before testing your policies, it's important to always finalize with a gpupdate /force on both client side and server side.
+
+![12Admin](https://github.com/user-attachments/assets/f3c3d317-5215-4f66-bb62-8f6a83be0cc1)
+![13Client](https://github.com/user-attachments/assets/33ffb879-0f8f-48fa-8690-725aad7c2f5b)
+
+<h2>Testing AccountLockOut Policy</h2>
+
+Attempt to log in Client1 6 times with one of the users using the wrong password. A pop up will occur and tell you that the accout has now been locked from too many failed attempts. We can observe the user account in our AD in the domain controller and unlock the account. In the Domain Controller open up Active Directory Users and Computers, locate the user that we locked out, right click the user and click Properties. In our user's properties click Account and check "Unlock Account", click Apply and click OK. We have successfully tested the AccountLockOut Policy and unlocked the user's account for them to attempt sign-in again.
+
+![14](https://github.com/user-attachments/assets/c38e5fca-0c42-40f7-8d68-5eaf7b7be26d)
+![15](https://github.com/user-attachments/assets/e6f39a87-bd08-40a6-9d4a-ae5ea38feb8d)
+![16](https://github.com/user-attachments/assets/0cb463b2-e498-4cf5-bcdc-f7258cdd39c5)
+
+
+
+
 </p>
