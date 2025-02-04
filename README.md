@@ -1,5 +1,17 @@
-# <h1>Group Policy Management (GPO) Configuration</h1>
+
+<h1>Creating & Implementing Account Lockout Policy/Password Policy</h1>
 <p>
+  This is a demonstration on creating and implementing an account lockout policy in Windows Server 2022. We will interact with the newly created GPO on the user side.
+</p>
+<p>
+<h2>Environments and Technologies used</h2>
+  
+  - Microsoft Azure (Virtual Machines/Compute)
+  - Remote Desktop
+  - Active Directory Domain Services
+  - CMD Prompt
+</p>
+
   <h2>Opening and Observing Group Policy Management</h2>
 
   First, log on to DC-1 as our administrator user account and type "run" in the search bar upon entry. Type in "gpmc.msc", this command will open up our Group Policy Management. Next expand Forest -> expand Domains -> expand mydomain.com -> observe Default Domain Policy. We can see what kind of policy it is enforcing by clicking "Settings", on inspection this default policy is already enforcing an account policy and local policy. After observing the policy, right click Default Domain Policy and click Edit.
