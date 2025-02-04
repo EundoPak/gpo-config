@@ -19,7 +19,7 @@
 
 <h2>Opening and Observing Group Policy Management</h2>
 
-First, log on to DC-1 as our administrator user account and type "run" in the search bar upon entry. Type in "gpmc.msc", this command will open up our Group Policy Management. Next expand Forest -> expand Domains -> expand mydomain.com -> observe Default Domain Policy. We can see what kind of policy it is enforcing by clicking "Settings", on inspection this default policy is already enforcing an account policy and local policy. After observing the policy, right click Default Domain Policy and click Edit.
+First, log on to DC-1 as an administrator user account and type "run" in the search bar upon entry. Type in "gpmc.msc", this command will open up our Group Policy Management. Next expand Forest -> expand Domains -> expand mydomain.com -> observe Default Domain Policy. We can see what kind of policy it is enforcing by clicking "Settings", on inspection this default policy is already enforcing an account policy and local policy. After observing the policy, right click Default Domain Policy and click Edit.
 
   ![1](https://github.com/user-attachments/assets/0472b355-55b1-49e9-a18e-841e9681ef0d)
   ![2](https://github.com/user-attachments/assets/c37da3a5-073a-4969-8a3b-8031d34ab8ec)
