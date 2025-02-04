@@ -1,5 +1,5 @@
 
-<h1>Creating & Implementing Account Lockout Policy/Password Policy</h1>
+<h1>Creating & Implementing Account Lockout Policy/Password Policy for Client Side</h1>
 <p>
   This is a demonstration on creating and implementing an account lockout policy in a previously configured Windows Server. We will interact with the newly created GPO on the client side to finish this demonstration.
 </p>
