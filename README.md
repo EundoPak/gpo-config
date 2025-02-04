@@ -62,12 +62,15 @@ The GPO will automatically update in due time, but we can manually force the gro
 ![12Admin](https://github.com/user-attachments/assets/f3c3d317-5215-4f66-bb62-8f6a83be0cc1)
 ![13Client](https://github.com/user-attachments/assets/33ffb879-0f8f-48fa-8690-725aad7c2f5b)
 
-<h2>Testing AccountLockOut Policy</h2>
+<h2>Testing AccountLockOut Policy & Unlocking User Account</h2>
 
-Attempt to log in Client1 using RDP 5 times with one of the users using the wrong password. A pop up will occur and tell you that the accout has now been locked from too many failed attempts. We can observe the user account in our AD in the domain controller and unlock the account. In the Domain Controller open up Active Directory Users and Computers, locate the user that we locked out, right click the user and click Properties. In our user's properties click Account and check "Unlock Account", click Apply and click OK. We have successfully tested the AccountLockOut Policy and unlocked the user's account for them to attempt sign-in again.
+Attempt to log in Client1 using RDP 5 times with one of the users using the wrong password. A pop up will occur and tell you that the accout has now been locked from too many failed attempts. We can observe the user account in our AD in the domain controller and unlock the account. 
 
 ![14](https://github.com/user-attachments/assets/c38e5fca-0c42-40f7-8d68-5eaf7b7be26d)
 ![15](https://github.com/user-attachments/assets/e6f39a87-bd08-40a6-9d4a-ae5ea38feb8d)
+
+In the Domain Controller open up Active Directory Users and Computers, locate the user that we locked out, right click the user and click Properties. In our user's properties click Account and check "Unlock Account", click Apply and click OK. We have successfully tested the AccountLockOut Policy and unlocked the user's account for them to attempt sign-in again.
+
 ![16](https://github.com/user-attachments/assets/0cb463b2-e498-4cf5-bcdc-f7258cdd39c5)
 
 This concludes the demonstration on creating and implementing an Account Lockout Policy / Password Policy.
