@@ -64,7 +64,7 @@ The GPO will automatically update in due time, but we can manually force the gro
 
 <h2>Testing AccountLockOut Policy</h2>
 
-Attempt to log in Client1 5 times with one of the users using the wrong password. A pop up will occur and tell you that the accout has now been locked from too many failed attempts. We can observe the user account in our AD in the domain controller and unlock the account. In the Domain Controller open up Active Directory Users and Computers, locate the user that we locked out, right click the user and click Properties. In our user's properties click Account and check "Unlock Account", click Apply and click OK. We have successfully tested the AccountLockOut Policy and unlocked the user's account for them to attempt sign-in again.
+Attempt to log in Client1 using RDP 5 times with one of the users using the wrong password. A pop up will occur and tell you that the accout has now been locked from too many failed attempts. We can observe the user account in our AD in the domain controller and unlock the account. In the Domain Controller open up Active Directory Users and Computers, locate the user that we locked out, right click the user and click Properties. In our user's properties click Account and check "Unlock Account", click Apply and click OK. We have successfully tested the AccountLockOut Policy and unlocked the user's account for them to attempt sign-in again.
 
 ![14](https://github.com/user-attachments/assets/c38e5fca-0c42-40f7-8d68-5eaf7b7be26d)
 ![15](https://github.com/user-attachments/assets/e6f39a87-bd08-40a6-9d4a-ae5ea38feb8d)
